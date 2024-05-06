@@ -54,7 +54,7 @@ try:
             lights[i]=light[len(light)-1-i]
         print(value,signal,voltage)
         GPIO.output(leds,lights)
-        if value>=0.60*256:
+        if value>=0.80*256:
             Time_end=t.time()
             flag=False
     GPIO.output(troyka,0)
